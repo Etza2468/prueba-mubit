@@ -1,0 +1,136 @@
+body {
+    font-family: "open sans", "segoe ui";
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.background, .backdrop {
+    background-color: #3f689c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+}
+
+.backdrop {
+    background: #333333;
+    filter: alpha(opacity=90);
+    opacity: .9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+}
+
+.background {
+    background-image: url('../img/background.jpeg');
+}
+
+.pay-form-container {
+    max-width: 400px;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -286px;
+}
+
+.pay-form-content {
+    background-color: #063f8482;
+    padding: 25px 25px;
+    border-radius: 50px;
+}
+
+.pay-form-header {
+    text-align: center;
+    color: white;
+}
+
+.pay-form-header img {
+    border: 1px solid #cccccc48;
+    padding: 10px;
+    border-radius: 50px;
+    width: 50%;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+    color: white;
+}
+
+.pay-form .input-container {
+    border-bottom: 1px solid #CCCCCC;
+    margin-top: 15px;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.pay-form .input {
+    border: 0;
+    width: 350px;
+    font-size: 15px;
+    background: inherit;
+    color: white;
+}
+
+.pay-form .input:focus {
+    outline: none;
+}
+
+.button {
+    margin-top: 15px;
+    width: 100%;
+    background: #2e7ec7;
+    border: 0;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+.button:hover {
+    background: #1f6eb7;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.result {
+    display: none;
+}
+
+.denominations {
+    text-align: center;
+}
+
+@media screen and (max-height: 600px) {
+    .pay-form-container {
+        margin-top: 0 !important;
+        top: 10px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .pay-form-container {
+        left: 5px;
+        margin-left: 5px;
+        min-width: 283px;
+        right: 10px;
+        margin-bottom: 10px;
+        width: auto;
+    }
+    .pay-form .input {
+        width: -webkit-fill-available;
+    }
+    .socmed-pay .socmed-btn i {
+        margin-right: 5px;
+        width: 19px;
+    }
+}
